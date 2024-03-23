@@ -1,5 +1,7 @@
 <?php
 
+use app\Database;
+
 $config = require base_path('config/database.php');
 $db = new Database($config['mysql'], 'root', 'root');
 

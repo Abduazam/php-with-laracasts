@@ -1,6 +1,9 @@
 <?php
 
-require base_path('contracts/Validator.php');
+use app\Database;
+use app\Validator;
+
+require base_path('app/Validator.php');
 
 $config = require base_path('config/database.php');
 $db = new Database($config['mysql'], 'root', 'root');

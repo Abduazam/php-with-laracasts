@@ -1,5 +1,7 @@
 <?php
 
+namespace app;
+
 class Validator
 {
 	public static function required($value)

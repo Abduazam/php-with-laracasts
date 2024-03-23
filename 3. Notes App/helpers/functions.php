@@ -1,5 +1,6 @@
 <?php
 
+use app\Response;
 use JetBrains\PhpStorm\NoReturn;
 
 #[NoReturn]
@@ -22,7 +23,7 @@ function abort($code = 404): void
 {
     http_response_code($code);
 
-    require "views/errors/{$code}.view.php";
+    require view("errors/{$code}.view.php");
 
     die();
 }

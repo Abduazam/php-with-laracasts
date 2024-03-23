@@ -1,5 +1,7 @@
 <?php
 
+namespace app;
+
 class Response
 {
     const NOT_FOUND = 404;
