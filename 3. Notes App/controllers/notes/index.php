@@ -1,9 +1,9 @@
 <?php
 
+use app\App;
 use app\Database;
 
-$config = require base_path('config/database.php');
-$db = new Database($config['mysql'], 'root', 'root');
+$db = App::resolve(Database::class);
 
 $notes = $db->query('select * from notes where user_id = 1')->get();
 
