@@ -35,12 +35,12 @@ function authorize($condition, $status = Response::FORBIDDEN): void
     }
 }
 
-function base_path($path)
+function base_path($path): string
 {
     return BASE_PATH . $path;
 }
 
-function view($path, $attributes = [])
+function view($path, $attributes = []): void
 {
     extract($attributes);
 
