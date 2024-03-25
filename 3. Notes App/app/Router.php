@@ -2,50 +2,63 @@
 
 namespace app;
 
+use app\Middleware\Middleware;
 use JetBrains\PhpStorm\NoReturn;
 
 class Router
 {
     protected array $routes = [];
 
-    protected function add($uri, $method, $controller): void
+    protected function add($uri, $method, $controller): static
     {
         $this->routes[] = [
             'uri' => $uri,
             'method' => $method,
-            'controller' => $controller
+            'controller' => $controller,
+            'middleware' => null,
         ];
+
+        return $this;
     }
 
-    public function get($uri, $controller): void
+    public function only($key): static
     {
-        $this->add($uri, 'GET', $controller);
+        $this->routes[array_key_last($this->routes)]['middleware'] = $key;
+
+        return $this;
     }
 
-    public function post($uri, $controller): void
+    public function get($uri, $controller): static
     {
-        $this->add($uri, 'POST', $controller);
+        return $this->add($uri, 'GET', $controller);
     }
 
-    public function put($uri, $controller): void
+    public function post($uri, $controller): static
     {
-        $this->add($uri, 'PUT', $controller);
+        return $this->add($uri, 'POST', $controller);
     }
 
-    public function patch($uri, $controller): void
+    public function put($uri, $controller): static
     {
-        $this->add($uri, 'PATCH', $controller);
+        return $this->add($uri, 'PUT', $controller);
     }
 
-    public function delete($uri, $controller): void
+    public function patch($uri, $controller): static
     {
-        $this->add($uri, 'DELETE', $controller);
+        return $this->add($uri, 'PATCH', $controller);
+    }
+
+    public function delete($uri, $controller): static
+    {
+        return $this->add($uri, 'DELETE', $controller);
     }
 
     public function route($uri, $method)
     {
         foreach ($this->routes as $route) {
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
+                Middleware::resolve($route['middleware']);
+
                 return require base_path($route['controller']);
             }
         }
