@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="30eb39ad-9727-4784-bc2c-b967d384edce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/auth/sign-up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/notes/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes/destroy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/notes/destroy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/notes/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/notes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/notes/show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/notes/store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/notes/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/auth/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/auth/login.view.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2e7orj4GZ0F4tvv9UMpM0HmZbrA" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/abduazam/Desktop/Learns/laracasts/PHP/3. Notes App",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controllers/auth" />
+      <recent name="$PROJECT_DIR$/views/auth" />
+      <recent name="$PROJECT_DIR$/controllers/notes" />
+      <recent name="$PROJECT_DIR$/views/notes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.15026.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30eb39ad-9727-4784-bc2c-b967d384edce" name="Changes" comment="" />
+      <created>1711265177439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711265177439</updated>
+      <workItem from="1711265178833" duration="4949000" />
+      <workItem from="1711377603905" duration="610000" />
+      <workItem from="1711389478337" duration="7634000" />
+      <workItem from="1711432896807" duration="26000" />
+      <workItem from="1711434347844" duration="5594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

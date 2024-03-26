@@ -1,6 +1,7 @@
 <?php
 
 use app\Response;
+use app\Session;
 use JetBrains\PhpStorm\NoReturn;
 
 #[NoReturn]
@@ -40,28 +41,21 @@ function base_path($path): string
     return BASE_PATH . $path;
 }
 
-function view($path, $attributes = []): void
+function view($path, $attributes = [])
 {
     extract($attributes);
 
-    require base_path('views/' . $path);
+    return require base_path('views/' . $path);
 }
 
-function login($user): void
+#[NoReturn]
+function redirect($path): void
 {
-    $_SESSION['user'] = [
-        'name' => $user['name'],
-        'email' => $user['email'],
-    ];
-
-    session_regenerate_id(true);
+    header("location: {$path}");
+    exit();
 }
 
-function logout(): void
+function old($key, $default = ''): string
 {
-    $_SESSION = [];
-    session_destroy();
-
-    $params = session_get_cookie_params();
-    setcookie('PHPSESSID', '', time() - 3600, $params['path'], $params['domain']);
+    return Session::get('old')[$key] ?? $default;
 }
